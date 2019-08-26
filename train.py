@@ -15,7 +15,7 @@ print(f'[INFO] Train shape: {X_train.shape}')
 print(f'[INFO] Test shape: {X_test.shape}')
 
 print('[INFO] Finding best model...')
-classifier = AutoSklearnClassifier(per_run_time_limit=30, ml_memory_limit=1024 * 100, time_left_for_this_task=7200)
+classifier = AutoSklearnClassifier(per_run_time_limit=20 * 60, ml_memory_limit=1024 * 100, time_left_for_this_task=5 * 3600)
 start = time.time()
 
 X_train = X_train.astype('float')
